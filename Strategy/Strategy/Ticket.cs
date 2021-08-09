@@ -17,9 +17,14 @@ namespace Strategy
         public Ticket(IPromoteStrategy promoteStrategy) {
         }
 
-        public double GetPromotedPrice()
+        public double GetPromotedPrice(IPromoteStrategy _promoteStrategy = default)
         {
-            return _promoteStrategy.DoDiscount(_price);
+            var promoteStrategy = _promoteStrategy ?? PromoteStrategy;
+            if (promoteStrategy == null)
+            {
+                return 0;
+            }
+            return promoteStrategy.DoDiscount(_price);
         }
 
         public string Id { get => _id; set => _id = value; }

@@ -17,4 +17,4 @@ Best Singleton Use cases:
 3.  Save application behavior (logging) (Luu hanh vi ung dung)
 4.  Caching (cache) (Luu bo nho dem)
 
-![Singleton Diagram](./images/ClassTicketDiagram.jpg)
+_Note: keyword `VOLATILE` (system will filter the newest variable to enforce)_

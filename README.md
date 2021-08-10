@@ -16,5 +16,3 @@ Best Singleton Use cases:
 2.  Setting in the application (Cac cai dat trong ung dung)
 3.  Save application behavior (logging) (Luu hanh vi ung dung)
 4.  Caching (cache) (Luu bo nho dem)
-
-_Note: keyword `VOLATILE` (system will filter the newest variable to enforce)_

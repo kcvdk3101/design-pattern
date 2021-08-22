@@ -12,15 +12,15 @@ namespace Singleton
         static void Main(string[] args)
         {
             // Multi threading
-            var thread1 = new Thread(() => Singleton.GetInstance().SayCardId());
-            var thread2 = new Thread(() => Singleton.GetInstance().SayCardId());
+            var thread1 = new Thread(() => ExampleSingleton.GetInstance().SayNumberOfExample());
+            var thread2 = new Thread(() => ExampleSingleton.GetInstance().SayNumberOfExample());
 
             thread1.Start();
             thread2.Start();
 
 
-            //Singleton.GetInstance().SayCardId();
-            
+            //ExampleSingleton.GetInstance().SayNumberOfExample();
+
             Console.ReadKey();
         }
     }

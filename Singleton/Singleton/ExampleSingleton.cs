@@ -6,28 +6,28 @@ using System.Threading.Tasks;
 
 namespace Singleton
 {
-    public class Singleton
+    class ExampleSingleton
     {
         private int number;
-        private static Singleton _uniqueInstance;
-        private Singleton(int number)
+        private static ExampleSingleton _uniqueInstance;
+        private ExampleSingleton(int number)
         {
             this.number = number;
         }
-        public static Singleton GetInstance()
+        public static ExampleSingleton GetInstance()
         {
             if (_uniqueInstance == null)
             {
                 var random = new Random();
 
-                _uniqueInstance = new Singleton(random.Next(1,4));
+                _uniqueInstance = new ExampleSingleton(random.Next(1, 4));
             }
             return _uniqueInstance;
         }
 
-        public void SayCardId()
+        public void SayNumberOfExample()
         {
-            Console.WriteLine("I have a card with id is " + number);
+            Console.WriteLine("This is " + number + " example of Singleton");
         }
     }
-}   
+}

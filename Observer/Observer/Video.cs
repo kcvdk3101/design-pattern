@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Observer
 {
-    class Program
+    public class Video
     {
-        static void Main(string[] args)
-        {
-            Console.ReadKey();
-        }
+
     }
 }

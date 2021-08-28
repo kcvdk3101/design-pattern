@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Observer
 {
-    class Program
+    public interface IObserver
     {
-        static void Main(string[] args)
-        {
-            Console.ReadKey();
-        }
+        void Notify(Subject subject, object arg);
     }
 }

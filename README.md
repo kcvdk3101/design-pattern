@@ -8,6 +8,8 @@ Case: Has discount price strategy for Transport Ticket
 
 ## 2.Observer
 
+![Observer Diagram](./images/ObserverDiagram.jpg)
+
 ## 3.Singleton
 
 Best Singleton Use cases:
